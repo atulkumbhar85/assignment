@@ -7,8 +7,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 // const FLASK_API_URL = process.env.FLASK_API_URL || 'http://backend:5000';
 // const FLASK_API_URL = 'http://127.0.0.1:5000';
-const FLASK_API_URL = 'http://3.109.210.69:5000';
-
+// const FLASK_API_URL = 'http://3.109.210.69:5000'; // for same instance deployment
+const FLASK_API_URL = 'http://13.233.163.245:5000'; // for same instance deployment
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
